@@ -210,3 +210,55 @@ footer {
   border-radius: 12px;
   border: 1px solid #e5b45b;
 }
+/* Fix website width on mobile */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header,
+.hero,
+section,
+.booking,
+.featured-photo,
+.contact,
+footer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.featured-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.gallery {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 27px;
+  }
+
+  .hero {
+    padding: 35px 16px;
+  }
+
+  .gallery img {
+    height: 210px;
+  }
+}
