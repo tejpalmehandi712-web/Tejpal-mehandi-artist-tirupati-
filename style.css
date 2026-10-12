@@ -167,3 +167,24 @@ footer {
     height: 300px;
   }
 }
+.about {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 35px 22px;
+  text-align: center;
+  background: linear-gradient(145deg, #32180d, #180c08);
+  border: 1px solid #bd8b46;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px #0008;
+}
+
+.about h2 {
+  color: #ffd780;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #f5e4d5;
+  margin-bottom: 15px;
+  line-height: 1.9;
+}
