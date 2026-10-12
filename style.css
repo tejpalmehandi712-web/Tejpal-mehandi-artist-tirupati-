@@ -1,4 +1,6 @@
 
+  }
+}
 /* Tejpal Mehandi Artist Tirupati */
 
 * {
@@ -13,7 +15,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: #120d0b;
+  background: #120b09;
   color: #fff;
   line-height: 1.6;
 }
@@ -21,25 +23,25 @@ body {
 header {
   padding: 30px 15px;
   text-align: center;
-  background: linear-gradient(135deg, #321408, #8b4513, #1b0c07);
-  border-bottom: 2px solid #e5b45b;
+  background: linear-gradient(135deg, #281008, #874319, #170a06);
+  border-bottom: 2px solid #f1c36e;
 }
 
 header h1 {
-  color: #ffd780;
-  font-size: clamp(25px, 6vw, 40px);
-  text-shadow: 0 0 15px #d88a25;
+  color: #ffdb8b;
+  font-size: clamp(25px, 6vw, 42px);
+  text-shadow: 0 0 15px #d78c37;
 }
 
 header p {
-  color: #ffefd2;
+  color: #fff0d3;
   margin-top: 8px;
 }
 
 .hero {
   padding: 55px 18px;
   text-align: center;
-  background: radial-gradient(circle, #512a18, #120d0b 75%);
+  background: radial-gradient(circle, #58301d, #120b09 75%);
 }
 
 .hero h2 {
@@ -49,7 +51,7 @@ header p {
 }
 
 .hero p {
-  color: #f4e6d9;
+  color: #f5e4d5;
   margin-bottom: 25px;
 }
 
@@ -58,36 +60,42 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin-top: 18px;
 }
 
 .btn {
   display: inline-block;
-  padding: 13px 23px;
+  padding: 14px 24px;
   border-radius: 30px;
   color: white;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 5px 18px #0008;
+  transition: transform 0.3s;
   animation: glow 1.5s infinite;
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
 .call {
-  background: #087d36;
+  background: #07853a;
 }
 
 .whatsapp {
-  background: #0ca957;
+  background: #12a85a;
 }
 
 @keyframes glow {
   0%, 100% {
-    transform: scale(1);
     box-shadow: 0 0 8px #d6a54a;
+    transform: scale(1);
   }
 
   50% {
+    box-shadow: 0 0 22px #ffcb63;
     transform: scale(1.05);
-    box-shadow: 0 0 20px #e5b45b;
   }
 }
 
@@ -105,7 +113,7 @@ section h2 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 13px;
   max-width: 1100px;
   margin: auto;
 }
@@ -115,9 +123,16 @@ section h2 {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid #bd8b46;
-  box-shadow: 0 5px 18px #0008;
+  border-radius: 15px;
+  border: 1px solid #d3a153;
+  background: #302019;
+  box-shadow: 0 6px 18px #0009;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px #d3a15355;
 }
 
 .contact {
@@ -129,6 +144,10 @@ section h2 {
 
 .contact p {
   margin: 8px 0;
+}
+
+.contact a:not(.btn) {
+  color: #ffda8b;
 }
 
 footer {
